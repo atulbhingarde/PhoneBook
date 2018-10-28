@@ -3,17 +3,20 @@
   color: aliceblue;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 190px; /* Set the width of the sidebar */
+  width: 10%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: black; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 2%;
   font-size: 30px;
+  font-size-adjust: inherit;
 }
-.inputgroup, .inputgroup2 {
-    padding-left: 250px;
+.inputgroup, .inputgroup2, .maindisplay {
+    padding-left: 10%;
+    width: 90%;
 }
 #Welcome {
     background-color: rgb(200, 100, 241);
@@ -33,7 +36,7 @@
   /* Style the search field */
   form.example input[type=text] {
     padding: 10px;
-    font-size: 17px;
+    font-size: 2%;
     border: 1px solid grey;
     float: left;
     width: 80%;
@@ -44,10 +47,10 @@
   form.example button {
     float: left;
     width: 20%;
-    padding: 10px;
+    padding: 2%;
     background: #2196F3;
     color: white;
-    font-size: 17px;
+    font-size: 10%;
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
@@ -62,4 +65,13 @@
     content: "";
     clear: both;
     display: table;
+  }
+  #block {
+    display:block;
+    border: 1px solid rgb(36, 15, 70);
+    /* height: 10em; */
+    border-radius: 2%;
+    padding: 2%;
+    margin-bottom: 1%;
+    width: 100%;
   }

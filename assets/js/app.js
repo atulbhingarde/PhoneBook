@@ -2,6 +2,8 @@ function FilterThem()
  {
    // alert("Hi there " + document.getElementById('thisname').value);
    myAdd();
+   document.getElementById('inputgroup').style.display = "block";
+
  }
 const render = function () {
     //$('.allinfo').empty();
@@ -9,7 +11,7 @@ const render = function () {
     // var $('.allinfo') = [];
     NameFilter = document.getElementById('thisname').value ;
     var re = new RegExp(NameFilter, 'ig');
-    var test = "<div style=\"background-color:grey;color:white;padding:20px;border-style:solid;\">";
+    var test = "<div id=\"block\" style=\"background-color:grey;color:white;padding:20px;border-style:solid;\">";
     for (let i = 0; i < employeeList.length; i++) 
        {
         // alert(employeeList[i].name);
@@ -28,7 +30,7 @@ const render = function () {
           { 
             // alert(" this is not " + NameFilter + " is in " + employeeList[i].name )
 
-            test += '<p>'+employeeList[i].name+'</p> <p>'+employeeList[i].officeNum+'</p> <p>'+employeeList[i].phoneNum+'</p> <br>' ; 
+            test += '<div id=\"block\">'+employeeList[i].name+'<br>'+employeeList[i].officeNum+'<br>'+employeeList[i].phoneNum+'</div>' ; 
           } else 
           { 
            // may be keep quiet for a while will see how to handle this, but not much prompt.
@@ -38,6 +40,7 @@ const render = function () {
        }
        // prompt('.allinfo');
        test = test + "</div>"
+       // alert(test);
        return test;
 
     };
@@ -63,6 +66,7 @@ const render = function () {
         document.getElementById('inputgroup').style.display = "none";
         document.getElementById('inputgroup2').style.display = "block";
         document.getElementById('JustDisplay').style.display = "none";
+        // document.getElementById('inputgroup2').add("sticky");
 
         /* if (x.style.display === "none") {
             x.style.display = "block";
@@ -109,7 +113,9 @@ const render = function () {
         document.getElementById('inputgroup').style.display = "block";
         document.getElementById('inputgroup2').style.display = "block";
         document.getElementById('JustDisplay').style.display = "none";
-        
+        //document.getElementById('inputgroup').classList.add("sticky");
+        document.getElementById('inputgroup').style.position = "fixed";
+        // document.getElementById('Myverify').style.paddingTop = "2%";
 
         /* if (x.style.display === "none") {
             x.style.display = "block";
