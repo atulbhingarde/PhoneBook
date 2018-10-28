@@ -25,7 +25,8 @@ const render = function () {
             test += '<p>'+employeeList[i].name+'</p> <p>'+employeeList[i].officeNum+'</p> <p>'+employeeList[i].phoneNum+'</p> <br>' ; 
           } else 
           { 
-           alert(" sorry this is not " + NameFilter + " is not in " + employeeList[i].name )
+           // may be keep quiet for a while will see how to handle this, but not much prompt.
+           // alert(" sorry this is not " + NameFilter + " is not in " + employeeList[i].name )
           };
         // alert(test);
        }
