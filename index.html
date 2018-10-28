@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--script>
+
+</script-->
+<!-- The form -->
+ <title>Document</title>
+ <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+ <script src="./assets/js/employeeList.js"></script>
+ <nav>
+   <div class="sidenav">
+         <!--img src="People.jpeg"-->
+         <ul class="Buttons">
+                <li><a href="#" onclick="myView(this); return false;">View</a></li>
+                <li><a href="#" onclick="myAdd(this); return false;">Add</a></li>
+                <li><a href="#" onclick="myVerify(this); return false;">Verify</a></li>
+                <li><a href="#" onclick="myUpdate(this); return false;">Update</a></li>
+                <li><a href="#" onclick="myDelete(this); return false;">Delete</a></li>
+         </ul>
+   </div>
+ </nav>
+ <br>
+       <div id="inputgroup" class="inputgroup">
+       <!--h5>Employee Info (view, add, modify, delete)</h5-->
+       <input type="text" name="searchName" id="thisname" placeholder="JaneDoe">
+       <input type="text" officeNum="officeNum" id="officeNum" placeholder="OfficeNumber">
+       <input type="text" phoneNum="phoneNum" id="phoneNum" placeholder="PhoneNumber">
+       <button id='searchIt' onclick="FilterThem()">Search</button>
+       </div>
+ <br>
+
+ <br>    
+     <div id="inputgroup2" class="inputgroup2">
+       <!--h5>Employee Info (update)</h5-->
+       <input type="text" name="oldName" id="oldName" placeholder="CurrentJaneDoe">
+       <input type="text" name="newName" id="newName" placeholder="NewJaneDoe">
+       <input type="text" officeNum="newofficeNum" id="newofficeNum" placeholder="NewOfficeNumber">
+       <input type="text" phoneNum="newphoneNum" id="newphoneNum" placeholder="NewPhoneNumber">
+
+     </div>
+   
+<br>
+     <div>
+      <div id="JustDisplay" class="JustDisplay">
+        <!--h5>Employee Info (update)</h5-->
+        <!--input type="text" name="oldName" id="oldName" placeholder="CurrentJaneDoe">
+        <input type="text" name="newName" id="newName" placeholder="NewJaneDoe">
+        <input type="text" officeNum="newofficeNum" id="newofficeNum" placeholder="NewOfficeNumber">
+        <input type="text" phoneNum="newphoneNum" id="newphoneNum" placeholder="NewPhoneNumber"-->
+ 
+      </div>
+     </div>
+  
+ <main>
+<!--section id= "Welcome">
+ <h3>Welcome to the Employee Page</h3>
+</section-->
+
+
+<div class="allInfo"></div>
+<div class="getInputVal"></div>
+<div class="nameVal"></div>
+
+ </main>
+
+ <script src="./assets/js/dom.js"></script>
+ <script src="./assets/js/app.js"></script>
+
+ <!----<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+</body>
+
+</html>
