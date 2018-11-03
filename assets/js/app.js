@@ -86,10 +86,13 @@ const render = function () {
     };
     const myAdd = function (link) {
         //alert(link.innerText+"ha ha ");
+        document.getElementById("searchIt").textContent="Add";
         var x = document.getElementById('inputgroup2');
-        document.getElementById('inputgroup').style.display = "none";
+        content = document.getElementById('inputgroup2').innerHTML = render(); // working
+        document.getElementById("searchIt").textContent="Add";
+        document.getElementById('inputgroup').style.display = "block";
         document.getElementById('inputgroup2').style.display = "block";
-        document.getElementById('JustDisplay').style.display = "none";
+        
         
 
         /* if (x.style.display === "none") {
@@ -110,6 +113,7 @@ const render = function () {
         // $nodeList.display;
     };
     const myVerify = function(link){
+        document.getElementById("searchIt").textContent="Verify";
         document.getElementById('inputgroup').style.display = "block";
         document.getElementById('inputgroup2').style.display = "block";
         document.getElementById('JustDisplay').style.display = "none";
@@ -127,7 +131,7 @@ const render = function () {
         //alert(" hi this it " + document.getElementById("inputgroup").innerHTML.valueOf());
         let content = document.getElementById("MyVerify").innerHTML ;
         //alert(' before '+ content);
-        // content = document.getElementById('Myverify').innerHTML = render(); // working
+        content = document.getElementById('Myverify').innerHTML = render(); // working
         
         // content =+ render();
         // prompt(' after '+ content);
